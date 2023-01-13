@@ -1,2 +1,79 @@
 @use "abstract" as *;
 @use "base" as *;
+
+.nav {
+  @include flex(row, space-between, center, 0);
+  margin-bottom: 8rem;
+
+  &__logo {
+  }
+
+  &__content {
+    backdrop-filter: blur(500px);
+    padding-left: 12rem;
+    padding-right: 6.4rem;
+    width: 110rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 70rem;
+      height: 2.4px;
+      background-color: var(--clr-gray-transparent);
+      position: absolute;
+      top: 50%;
+      left: -65rem;
+    }
+
+    &--num,
+    &--link {
+      letter-spacing: 2px;
+    }
+    &--num {
+      color: var(--clr-white);
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    &--links {
+      @include flex(row, center, center, 6.4rem);
+    }
+
+    &--list {
+      @include flex(row, center, center, 1.6rem);
+      border-bottom: 4px solid transparent;
+      padding: 4.8rem 0;
+      transition: all 0.3s ease;
+      &:hover {
+        border-bottom: 4px solid var(--clr-white);
+      }
+    }
+
+    &--link {
+      &:link,
+      &:visited {
+        color: var(--clr-gray);
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.hero {
+  @include flex(row, space-evenly, center, 0);
+  padding: 8rem;
+  &__header {
+    color: var(--clr-white);
+  }
+  &__pri-heading {
+    font-size: 4.8rem;
+    &--sub {
+      font-size: 8rem;
+    }
+  }
+  &__desc {
+    font-size: 2.4rem;
+  }
+}

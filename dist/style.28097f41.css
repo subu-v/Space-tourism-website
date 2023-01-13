@@ -6,8 +6,105 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-white: #ffffffff;
+  --clr-black: #1e1f24ff;
+  --clr-text: #fefffcff;
+  --clr-gray: #b8c1c9ff;
+  --clr-gray-transparent: rgba(184, 193, 201, 0.233);
+}
+
 body {
   box-sizing: border-box;
+  background-image: url("/background-home-desktop.6a343f16.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Cinzel", serif;
+  padding: 4.8rem 0 4.8rem 4.8rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 8rem;
+}
+.nav__content {
+  backdrop-filter: blur(500px);
+  padding-left: 12rem;
+  padding-right: 6.4rem;
+  width: 110rem;
+  position: relative;
+}
+.nav__content::before {
+  content: "";
+  width: 70rem;
+  height: 2.4px;
+  background-color: var(--clr-gray-transparent);
+  position: absolute;
+  top: 50%;
+  left: -65rem;
+}
+.nav__content--num, .nav__content--link {
+  letter-spacing: 2px;
+}
+.nav__content--num {
+  color: var(--clr-white);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.nav__content--links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 6.4rem;
+}
+.nav__content--list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border-bottom: 4px solid transparent;
+  padding: 4.8rem 0;
+  transition: all 0.3s ease;
+}
+.nav__content--list:hover {
+  border-bottom: 4px solid var(--clr-white);
+}
+.nav__content--link:link, .nav__content--link:visited {
+  color: var(--clr-gray);
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 0;
+  padding: 8rem;
+}
+.hero__header {
+  color: var(--clr-white);
+}
+.hero__pri-heading {
+  font-size: 4.8rem;
+}
+.hero__pri-heading--sub {
+  font-size: 8rem;
+}
+.hero__desc {
+  font-size: 2.4rem;
 }
 
 /*# sourceMappingURL=/style.28097f41.css.map */

@@ -6,6 +6,23 @@
   box-sizing: inherit;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-white: #ffffffff;
+  --clr-black: #1e1f24ff;
+  --clr-text: #fefffcff;
+  --clr-gray: #b8c1c9ff;
+  --clr-gray-transparent: rgba(184, 193, 201, 0.233);
+}
+
 body {
   box-sizing: border-box;
+  background-image: url("../../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Cinzel", serif;
+  padding: 4.8rem 0 4.8rem 4.8rem;
 }

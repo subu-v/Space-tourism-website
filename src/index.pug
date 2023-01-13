@@ -5,26 +5,29 @@ html(lang="en")
         meta(name="viewport" content="width-device-width, initial-scale=1.0")
         link(rel="icon" type="image/png" size="32x32" href="../../assets/favicon-32x32.png") 
         title Space tourism website 
+        link(rel="preconnect" href="https://fonts.googleapis.com")
+        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700&display=swap" rel="stylesheet")
         link(rel="stylesheet" href="../sass/style.scss")
 
     body 
-        main 
+        main.space-tourism 
             section.nav
-                img(src="../../assets/shared/logo.svg", alt="logo")
-                nav.nav__content  
-                    ul
-                        li
-                            p 00
-                            a(href="#") HOME
-                        li
-                            p 01 
-                            a(href="#") DESTINATION
-                        li
-                            p 02
-                            a(href="#") CREW
-                        li
-                            p 03
-                            a(href="#") TECNONOLOGY
+                img(class="nav__logo" src="../../assets/shared/logo.svg", alt="logo")
+                nav.nav__content
+                    ul.nav__content--links
+                        li.nav__content--list
+                            p.nav__content--num 00
+                            a(class="nav__content--link" href="#") HOME
+                        li.nav__content--list
+                            p.nav__content--num 01 
+                            a(class="nav__content--link" href="#") DESTINATION
+                        li.nav__content--list
+                            p.nav__content--num 02
+                            a(class="nav__content--link" href="#") CREW
+                        li.nav__content--list
+                            p.nav__content--num 03
+                            a(class="nav__content--link" href="#") TECNONOLOGY
             section.hero
                 header.hero__header
                     h1.hero__pri-heading SO, YOU WANT TO TRAVEL TO
