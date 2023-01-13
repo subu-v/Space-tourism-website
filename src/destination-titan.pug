@@ -1,0 +1,50 @@
+doctype html 
+html(lang="en")
+    head 
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width-device-width, initial-scale=1.0")
+        link(rel="icon" type="image/png" size="32x32" href="../../assets/favicon-32x32.png") 
+        title Space tourism website 
+        link(rel="stylesheet" href="../sass/style.scss")
+
+    body 
+        main 
+            section.nav
+                img(src="../../assets/shared/logo.svg", alt="logo")
+                nav.nav__content  
+                    ul
+                        li
+                            p 00
+                            a(href="#") HOME
+                        li
+                            p 01 
+                            a(href="#") DESTINATION
+                        li
+                            p 02
+                            a(href="#") CREW
+                        li
+                            p 03
+                            a(href="#") TECNONOLOGY
+            section.hero 
+                h1.hero__pri-heading 01 PICK YOUR DESTINATION
+                .hero__content
+                    .hero__img-container
+                        img.hero__img(src="../../assets/destination/image-titan.png", alt="")
+                    .hero__desc-container 
+                        .hero__switch-des
+                            p.hero__switched-des MOON
+                            p.hero__switched-des MARS
+                            p.hero__switched-des EUROPA
+                            p.hero__switched-des TITAN
+                        h2.hero__desc-heading TITAN 
+                        p.hero__desc 
+                            | The only moon known to have a dense atmosphere other than Earth,
+                            | Titan is a home away from home (just a few hundred degrees colder!).
+                            | As a bonus, you get striking views of the Rings of Saturn
+                    .hero__des-info
+                        div
+                            h3.hero__des-info--heading AVG DISTANCE
+                            p.hero__des-info--desc 1.6 BIL. KM
+                        div
+                            h3.hero__des-info--heading EST. TRAVEL TIME
+                            p.hero__des-info--desc 7 YEARS
